@@ -85,7 +85,7 @@ def main():
         
        if prediction == 0:
            st.write(f"The severity prediction is fatal injury⚠")
-       elif prediction == 1:
+       else if prediction == 1:
            st.write(f"The severity prediction is serious injury")
        else:
            st.write(f"The severity prediction is slight injury")
@@ -96,8 +96,7 @@ def main():
        [Kaggle](https://www.kaggle.com/avikumart) 
        """)
        a,b,c = st.columns([0.2,0.6,0.2])
-with b:
- st.image("banner-picture.jpeg", use_column_width=True)
+with b:st.image("banner-picture.jpeg", use_column_width=True)
 
 
 # description about the project and code files       
